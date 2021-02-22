@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
             this.cookie.set('userid', res.data.user._id);
             this.cookie.set('jwt', res.token);
             this.tokenSource.next(res.token);
-            window.setTimeout(() => location.assign('/reports'), 1000);
+            window.setTimeout(() => location.assign('https://xeroangular.netlify.app/reports'), 1000);
           }
         },
         (err) => alert(err.message)
@@ -45,7 +45,4 @@ export class LoginComponent implements OnInit {
   }
 }
 
-// this.cookie.set('token', res.token, {
-//   sameSite: 'None',
-//   secure: true,
-// });
+

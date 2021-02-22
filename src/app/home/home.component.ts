@@ -17,34 +17,31 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.cookie.get('jwt').length > 20) {
-      this.isLoggedIn=true;
-    this.http.getData().subscribe((data) => {
-      this.user = data;
-      // this.isValid = this.reports.length > 0 ? true : false;
-      this.name=this.user[0].name;
-      console.log('USER FROM HOME>>>', this.name);
-    });
-  }else{
-    this.isLoggedIn=false;
-  }
+      this.isLoggedIn = true;
+      this.http.getData().subscribe((data) => {
+        this.user = data;
+        // this.isValid = this.reports.length > 0 ? true : false;
+        this.name = this.user[0].name;
+        console.log('USER FROM HOME>>>', this.name);
+      });
+    } else {
+      this.isLoggedIn = false;
+    }
   }
 
   onClick() {
-    window.location.assign('/reports');
+    window.location.assign('https://xeroangular.netlify.app/reports');
   }
 
   onSignout() {
-    window.location.assign('/logout');
+    window.location.assign('https://xeroangular.netlify.app/logout');
   }
-
 
   onLogin() {
-    window.location.assign('/login');
+    window.location.assign('https://xeroangular.netlify.app/login');
   }
 
-  onProfileView(){
-    window.location.assign('/account');
+  onProfileView() {
+    window.location.assign('https://xeroangular.netlify.app/account');
   }
-
-
 }

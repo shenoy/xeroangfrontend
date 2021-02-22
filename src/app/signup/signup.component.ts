@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
           this.cookie.set('userid', res.data.user._id);
           this.cookie.set('jwt', res.token);
           alert('Signup successful. Please login');
-          window.setTimeout(() => location.assign('/login'),1000);
+          window.setTimeout(() => location.assign('https://xeroangular.netlify.app/login'),1000);
         },
         (err) => console.log(err)
       );

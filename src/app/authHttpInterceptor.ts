@@ -60,22 +60,3 @@ export class AuthHttpInterceptor implements OnInit, HttpInterceptor {
   }
 }
 
-// if (this.token) {
-//   request = request.clone({
-//     headers: request.headers.set('Authorization', 'Bearer ' + this.data.tokenSource),
-//   });
-// }
-
-
-
-// request = request.clone({
-    //   responseType: 'json',
-    //   setHeaders: {
-    //     Authorization: `Bearer ${this.data.currentToken}`,
-    //     'Content-Type': 'application/json; charset=UTF-8',
-    //   },
-
-    //   withCredentials: false,
-    // });
-
-    // return next.handle(request);
