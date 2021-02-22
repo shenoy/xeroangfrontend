@@ -1,0 +1,27 @@
+.container {
+  width: 60%;
+  min-height: 200px;
+  line-height: 100px;
+  margin-top: 200px;
+  background-color: rgb(234, 247, 247);
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  
+}
+.right {
+  float: right;
+}
+.left{
+  font-weight: bolder;
+}
+
+p {
+  border-bottom: thin solid lightgray;
+}
+
+.section {
+  justify-content: space-between;
+  border-bottom: thin solid rgb(247, 178, 201);
+}

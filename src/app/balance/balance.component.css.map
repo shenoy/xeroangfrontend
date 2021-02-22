@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACD,KAAK,EAPG,OAAiB;EAQzB,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,EAAE,CAAC;EACD,aAAa,EAAE,IAAI,CAAC,KAAK,CAZjB,OAAiB;CAa1B;;AAED,AAAA,CAAC,CAAC;EACA,aAAa,EAAE,oBAAoB;CACpC;;AAED,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,KAAK;CACb;;AAED,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "balance.component.scss"
+    ],
+    "names": [],
+    "file": "balance.component.css"
+}

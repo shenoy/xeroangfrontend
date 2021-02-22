@@ -1,0 +1,41 @@
+<header>
+  <div class="container">
+    <a href="#" class="logo">Asset Management Pro</a>
+    <nav *ngIf="isValid">
+      <ul>
+        <li>
+          <a href="#" routerLink="/">Home</a>
+        </li>
+        <li>
+          <a href="#" routerLink="/reports">Reports</a>
+        </li>
+        <li>
+          <a href="#" routerLink="/account">Account</a>
+        </li>
+       
+        <li>
+          <a href="#" routerLink="/logout">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <nav *ngIf="!isValid">
+      <ul>
+        <li>
+          <a href="#" routerLink="/">Home</a>
+        </li>
+        <li>
+          <a href="#" routerLink="/reports">Reports</a>
+        </li>
+        <li>
+          <a href="#" routerLink="/signup">Signup</a>
+        </li>
+        <li>
+          <a href="#" routerLink="/login">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

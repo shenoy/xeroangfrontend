@@ -1,0 +1,70 @@
+$primary: rgb(123, 184, 235);
+
+h2 {
+  text-align: center;
+  font-weight: 100;
+}
+
+form {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: lightblue;
+  border: thin solid rgb(119, 161, 240);
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: rgb(25, 181, 233);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: $primary;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-group {
+  background-color: #f2f2f2;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 0.8rem;
+}

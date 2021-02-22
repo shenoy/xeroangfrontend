@@ -1,0 +1,29 @@
+<div *ngIf="isLoggedIn">
+  <h3>Welcome {{ name }}!</h3>
+
+  <div class="container">
+      <p>
+        View your <strong>Asset Management Pro</strong> profile &nbsp; &nbsp;<span (click)="onProfileView()">My Profile</span>
+      </p>
+    <p>
+      View your Accounting Reports from <strong>Xero</strong> &nbsp; &nbsp;<span
+        (click)="onClick()"
+        >Balance Sheet</span
+      >
+    </p>
+    <p>Sign out &nbsp; &nbsp;<span (click)="onSignout()">Log Out</span></p>
+  </div>
+</div>
+
+<div *ngIf="!isLoggedIn">
+  <div class="container">
+  
+    <p>
+      View your Accounting Reports from Xero &nbsp; &nbsp;<span
+        (click)="onClick()"
+        >Balance Sheet</span
+      >
+    </p>
+    <p>Log in &nbsp; &nbsp;<span (click)="onLogin()">Log In</span></p>
+  </div>
+</div>

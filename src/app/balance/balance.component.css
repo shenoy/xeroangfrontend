@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: #4fa6ec;
+  text-align: center;
+}
+
+li {
+  border-bottom: thin solid #4fa6ec;
+}
+
+p {
+  border-bottom: thin solid lightgray;
+}
+
+.right {
+  float: right;
+}
+
+.section {
+  font-weight: 600;
+}
+/*# sourceMappingURL=balance.component.css.map */

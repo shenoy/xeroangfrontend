@@ -1,0 +1,56 @@
+<h1>Balance Sheet</h1>
+<div class="container">
+  <div *ngIf="isLoggedIn">
+    <ul *ngIf="isValid">
+      <li *ngFor="let balance of balances">
+        <p class="section">
+          <span class="left">Date&nbsp;&nbsp;</span>
+          <span class="left">{{ balance.reportDate.split("T")[0] }}</span>
+        </p>
+        <p class="section">
+          <span class="left">Company&nbsp;&nbsp;</span>
+          <span class="right">{{ balance.company }}</span>
+        </p>
+        <p class="section">
+          <span class="left">Assets</span>
+        </p>
+        <p class="balancesElement">
+          <span class="left">Capital</span
+          ><span class="right">{{ balance.bank }}</span>
+        </p>
+        <p class="balancesElement">
+          <span class="left">Current Assets</span
+          ><span class="right">{{ balance.currentAssets }}</span>
+        </p>
+        <p class="balancesElement">
+          <span class="left">Fixed Assets</span>
+          <span class="right">{{ balance.fixedAssets }}</span>
+        </p>
+        <p class="balancesElement">
+          <span class="left">Total Current Assets</span>
+          <span class="right">{{ balance.totalCurrentAssets }}</span>
+        </p>
+        <p class="section">
+          <span class="left">Liabilities</span>
+        </p>
+        <p class="balancesElement">
+          <span class="left">Current Liabilities</span
+          ><span class="right">{{ balance.currentLiabilities }}</span>
+        </p>
+        <p class="section">
+          <span class="left">Equity</span>
+          <span class="right">{{ balance.equity }}</span>
+        </p>
+      </li>
+    </ul>
+    <div class="message" *ngIf="!isValid">
+      <p>
+        Please check your email. Verify your account from the link provided in
+        the email to see your balances sheet
+      </p>
+    </div>
+  </div>
+  <div class="message" *ngIf="!isLoggedIn">
+    <p>Please log in with your email and password to view your Accounting Reports</p>
+  </div>
+</div>

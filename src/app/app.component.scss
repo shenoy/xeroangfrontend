@@ -1,0 +1,14 @@
+header {
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+nav{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+.logo {
+  color: rgb(10, 38, 114);
+}

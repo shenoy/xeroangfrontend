@@ -1,0 +1,33 @@
+button {
+  width: 60%; 
+  background-color: rgb(204, 204, 240);
+  width: 80%;
+  height: 40px;
+  border: thin solid rgb(140, 186, 238);
+  border-radius: 3px;
+   
+}
+.button:hover{
+  background-color: rgb(125, 125, 243);
+
+}
+
+.container {
+  margin-top: 100px;
+  height: 300px;
+  width: 50%;
+  background-color: rgb(238, 248, 248);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 300px;
+  text-align: center;
+  z-index: -1;
+}
+
+h4 {
+  font-weight: 100;
+  margin-top: 100px;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+span {
+  font-weight: bold;
+  background: lightgray;
+  padding: 0.3em 0.8em;
+  cursor: pointer;
+  user-select: none;
+}
+h3 {
+  font-weight: 100;
+  text-align: center;
+  color: rgb(61, 130, 153);
+}
+
+span {
+  font-weight: 100;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 3em;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+  background-color: rgb(234, 245, 250);
+}
