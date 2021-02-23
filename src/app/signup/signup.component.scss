@@ -15,13 +15,13 @@ button {
   width: 100%;
   height: 40px;
   margin-top: 5px;
-  background-color: lightblue;
-  border: thin solid rgb(119, 161, 240);
+  background-color: rgb(238, 243, 245);
+  border: thin solid rgb(205, 220, 248);
   border-radius: 3px;
 }
 
 button:hover {
-  background-color: rgb(25, 181, 233);
+  background-color: rgb(199, 235, 247);
 }
 
 input[type="text"],

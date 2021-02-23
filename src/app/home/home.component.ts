@@ -30,18 +30,18 @@ export class HomeComponent implements OnInit {
   }
 
   onClick() {
-    window.location.assign('https://xeroangular.netlify.app/reports');
+    window.location.assign('/reports');
   }
 
   onSignout() {
-    window.location.assign('https://xeroangular.netlify.app/logout');
+    window.location.assign('/logout');
   }
 
   onLogin() {
-    window.location.assign('https://xeroangular.netlify.app/login');
+    window.location.assign('/login');
   }
 
   onProfileView() {
-    window.location.assign('https://xeroangular.netlify.app/account');
+    window.location.assign('/account');
   }
 }

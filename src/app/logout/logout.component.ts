@@ -8,16 +8,15 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./logout.component.scss'],
 })
 export class LogoutComponent implements OnInit {
-  SERVER_URL = 'https://xeronodejs.herokuapp.com/users/logout';
+  SERVER_URL = 'https://assetmanpro.herokuapp.com/users/logout';
   value: string;
   isValid: boolean;
 
   constructor(private http: HttpClient, private cookie: CookieService) {}
 
-
-    ngOnInit(): void {
-      this.value = this.cookie.get('jwt');
-      this.isValid = this.value.length > 20 ? true : false;
+  ngOnInit(): void {
+    this.value = this.cookie.get('jwt');
+    this.isValid = this.value.length > 20 ? true : false;
   }
 
   onLogout() {

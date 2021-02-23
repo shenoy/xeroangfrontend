@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  SERVER_URL = 'https://xeronodejs.herokuapp.com/users/login';
+  SERVER_URL = 'https://assetmanpro.herokuapp.com/users/login';
   email: '';
   password: '';
 
@@ -37,12 +37,10 @@ export class LoginComponent implements OnInit {
             this.cookie.set('userid', res.data.user._id);
             this.cookie.set('jwt', res.token);
             this.tokenSource.next(res.token);
-            window.setTimeout(() => location.assign('https://xeroangular.netlify.app/reports'), 1000);
+            window.setTimeout(() => location.assign('/reports'), 1000);
           }
         },
         (err) => alert(err.message)
       );
   }
 }
-
-
